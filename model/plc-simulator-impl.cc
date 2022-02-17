@@ -96,6 +96,12 @@ PLC_SimulatorImpl::Destroy ()
     }
 }
 
+bool
+PLC_SimulatorImpl::IsNextEventNow (void) const
+{
+	return false;
+}
+
 void
 PLC_SimulatorImpl::SetScheduler (ObjectFactory schedulerFactory)
 {

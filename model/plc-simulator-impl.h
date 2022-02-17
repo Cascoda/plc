@@ -46,6 +46,8 @@ public:
 	uint64_t GetQuantizedTicks(Time time);
 
 	virtual void Destroy ();
+  /** Have to have it here for ns3 to build. But only used with DefaulSimulatortImpl */
+    virtual bool IsNextEventNow (void) const;
 	virtual bool IsFinished (void) const;
 	virtual Time Next (void) const;
 	virtual void Stop (void);
